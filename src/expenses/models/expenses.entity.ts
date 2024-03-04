@@ -1,5 +1,5 @@
 import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
-import { ExpenseType } from './types/expense';
+import { ExpenseType } from '../types/expense';
 
 @Entity({ name: 'expenses' })
 export class Expense {

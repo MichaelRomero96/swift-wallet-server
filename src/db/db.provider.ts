@@ -1,8 +1,9 @@
+import { DB_CONFIG } from 'src/shared/constants';
 import { DataSource } from 'typeorm';
 
 const databaseProviders = [
   {
-    provide: 'DATA_SOURCE',
+    provide: DB_CONFIG,
     useFactory: async () => {
       const dataSource = new DataSource({
         type: 'mysql',
