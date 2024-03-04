@@ -20,11 +20,4 @@ export class Expense {
 
   @Column({ type: 'datetime', default: () => 'CURRENT_TIMESTAMP' })
   createdAt: Date;
-
-  @Column({
-    nullable: true,
-    type: 'datetime',
-    default: () => 'CURRENT_TIMESTAMP',
-  })
-  updatedAt: Date;
 }
